@@ -16,4 +16,5 @@ RUN npm install --production; npm cache clean
 # Post-install
 EXPOSE 8080
 VOLUME /opt/scripts
-CMD ["/opt/bin/hubot", "--name", "${HUBOT_NAME}", "--adapter", "shell"]
+CMD ["/opt/bin/hubot", "--name", "Doerte"]
+
