@@ -15,6 +15,9 @@ module.exports = (robot) ->
 	
 	robot.hear /benny/i, (res) ->
 	 res.reply "Noll? Der macht doch eh den ganzen Tag nix!"
+
+	robot.hear /icecream/i, (res) ->
+	 res.reply "Eis geht immer. Pong, übrigens"
 #
 
 # robot.respond /open the (.*) doors/i, (res) ->
@@ -30,14 +33,13 @@ module.exports = (robot) ->
   #
   # lulz = ['lol', 'rofl', 'lmao']
   #
-  # robot.respond /lulz/i, (res) ->
+  #  robot.respond /lulz/i, (res) ->
   #   res.send res.random lulz
   #
-  # robot.topic (res) ->
+  #  robot.topic (res) ->
   #   res.send "#{res.message.text}? That's a Paddlin'"
   #
-  #
-  # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
+  #  # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
   # leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
   #
   # robot.enter (res) ->
@@ -62,7 +64,7 @@ module.exports = (robot) ->
   #
   # robot.respond /annoy me/, (res) ->
   #   if annoyIntervalId
-  #     res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
+  #  res.send "AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH"
   #     return
   #
   #   res.send "Hey, want to hear the most annoying sound in the world?"
